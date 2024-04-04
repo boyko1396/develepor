@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    'title': 'Dev - Project'
+  })
+  <body>
+    
+    @@include('html/components/preloader.html')
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- services-section BEGIN -->
+          <section class="services-section">
+            <div class="container container--size-md services-section__container">
+              <h1 class="services-section__title">Work <svg class="u-icon"><use xlink:href="images/icons/icons.svg#arrow-type-3"></use></svg> Warne Scope Mounts</h1>
+            </div>
+            <div class="container container--size-lg services-section__container">
+              <div class="services-section__poster-wrapper">
+                <div class="poster-fluid services-section__poster">
+                  <div class="poster-fluid__media">
+                    <picture class="poster-fluid__picture">
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="images/content-img-2-sm.webp"
+                                type="image/webp">
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="images/content-img-2-sm.jpg"
+                                type="image/jpeg">
+                      <source
+                        srcset="images/content-img-2.webp"
+                                type="image/webp">
+                      <img
+                        src="images/content-img-2.jpg"
+                        alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+                        width="183" height="128">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="services-section__content">
+                <div class="services-section__content-tab-nav-wrapper">
+                  <ul class="tab-nav services-section__content-tab-nav">
+                    <li class="tab-nav__item">
+                      <a href="#tab-card-1" class="js-work-tab-nav tab-nav__link is-active">Backstage</a>
+                    </li>
+                    <li class="tab-nav__item">
+                      <a href="#tab-card-2" class="js-work-tab-nav tab-nav__link">Work</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row services-section__content-row">
+                  <div id="tab-card-1" class="js-work-tab-content row__col--9 services-section__content-col is-show">
+                    <div class="content services-section__content-text">
+                      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h2>
+                      <img data-src="images/content-img-3.jpg" class="js-lazyload content-img-fluid" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" width="1280" height="806">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      <img data-src="images/content-img-4.jpg" class="js-lazyload content-img-fluid" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" width="1280" height="806">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor</p>
+                      <img data-src="images/content-img-5.jpg" class="js-lazyload content-img-fluid" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor" width="1280" height="806">
+                    </div>
+                  </div>
+                  <div id="tab-card-2" class="js-work-tab-content row__col--9 services-section__content-col">
+                    <div class="content services-section__content-text">
+                      <h2>Lorem IPSUM DOLOR sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+                      <img data-src="images/services-card-3.jpg" class="js-lazyload content-img-fluid" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" width="1280" height="806">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <img data-src="images/content-img-6.jpg" class="js-lazyload content-img-fluid" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore" width="1280" height="806">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <img data-src="images/content-img-7.jpg" class="js-lazyload content-img-fluid" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor" width="1280" height="806">
+                      <img data-src="images/content-img-8.jpg" class="js-lazyload content-img-full d-sm-none" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor" width="1280" height="806">
+                      <img data-src="images/content-img-8-sm.jpg" class="js-lazyload content-img-full d-sm-block" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor" width="1280" height="806">
+                      <img data-src="images/content-img-9.jpg" class="js-lazyload content-img-fluid" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor" width="1280" height="806">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="title-size-5 services-section__appeal">You may also like this</div>
+              <div class="row services-section__list">
+                <div class="row__col--7 services-section__list-col services-section__list-col--size-md">
+                  <article class="services-card services-card--size-md">
+                    <div class="services-card__inner">
+                      <div class="services-card__media">
+                        <picture class="services-card__picture">
+                          <source
+                            data-srcset="images/services-card-1@2x.webp 2x,
+                                    images/services-card-1.webp"
+                                    type="image/webp">
+                          <img
+                            class="js-lazyload"
+                            data-src="images/services-card-1.jpg"
+                            data-srcset="images/services-card-1@2x.jpg 2x"
+                            alt="EvolveDrupal"
+                            width="568" height="757">
+                        </picture>
+                      </div>
+                      <div class="services-card__content">
+                        <div class="services-card__counter">#01</div>
+                        <h3 class="services-card__title">
+                          <a href="#" class="services-card__link">EvolveDrupal</a>
+                        </h3>
+                        <p class="services-card__position">PromConference Brand Identity</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--7 services-section__list-col services-section__list-col--size-md">
+                  <article class="services-card services-card--size-md">
+                    <div class="services-card__inner">
+                      <div class="services-card__media">
+                        <picture class="services-card__picture">
+                          <source
+                            data-srcset="images/services-card-2@2x.webp 2x,
+                                    images/services-card-2.webp"
+                                    type="image/webp">
+                          <img
+                            class="js-lazyload"
+                            data-src="images/services-card-2.jpg"
+                            data-srcset="images/services-card-2@2x.jpg 2x"
+                            alt="New / Mode"
+                            width="568" height="757">
+                        </picture>
+                      </div>
+                      <div class="services-card__content">
+                        <div class="services-card__counter">#02</div>
+                        <h3 class="services-card__title">
+                          <a href="#" class="services-card__link">New / Mode</a>
+                        </h3>
+                        <p class="services-card__position">Art-Direction; Brand Identity; Interfaces.</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- services-section END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

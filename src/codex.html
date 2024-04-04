@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    'title': 'Dev - Codex'
+  })
+  <body>
+    
+    @@include('html/components/preloader.html')
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- services-section BEGIN -->
+          <section class="services-section">
+            <div class="container container--size-md services-section__container">
+              <h1 class="services-section__title">Codex</h1>
+              <h2 class="services-section__subtitle">Design codex is a set of short rules that a good designer should follow, and a bad one better not.</h2>
+            </div>
+            <div class="container container--size-lg services-section__container">
+              <div class="row services-section__list">
+                <div class="row__col--7 services-section__list-col services-section__list-col--size-md">
+                  <article class="services-card services-card--size-md">
+                    <div class="services-card__inner">
+                      <div class="services-card__media">
+                        <picture class="services-card__picture">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-1-xs@2x.webp 2x,
+                                    images/services-slider-card-1-xs.webp"
+                                    type="image/webp">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-1-xs@2x.jpg 2x,
+                                    images/services-slider-card-1-xs.jpg"
+                                    type="image/jpeg">
+                          <source
+                            data-srcset="images/services-slider-card-1-sm@2x.webp 2x,
+                                    images/services-slider-card-1-sm.webp"
+                                    type="image/webp">
+                          <img
+                            class="js-lazyload"
+                            data-src="images/services-slider-card-1-sm.jpg"
+                            data-srcset="images/services-slider-card-1-sm@2x.jpg 2x"
+                            alt="Every design task has only one possible solution: the right one."
+                            width="568" height="757">
+                        </picture>
+                      </div>
+                      <div class="services-card__content">
+                        <div class="services-card__counter">#01</div>
+                        <h3 class="services-card__title">
+                          <a href="codex2.html" class="services-card__link">Every design task has only one possible solution: the right one.</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--7 services-section__list-col services-section__list-col--size-md">
+                  <article class="services-card services-card--size-md">
+                    <div class="services-card__inner">
+                      <div class="services-card__media">
+                        <picture class="services-card__picture">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-2-xs@2x.webp 2x,
+                                    images/services-slider-card-2-xs.webp"
+                                    type="image/webp">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-2-xs@2x.jpg 2x,
+                                    images/services-slider-card-2-xs.jpg"
+                                    type="image/jpeg">
+                          <source
+                            data-srcset="images/services-slider-card-2-sm@2x.webp 2x,
+                                    images/services-slider-card-2-sm.webp"
+                                    type="image/webp">
+                          <img
+                            class="js-lazyload"
+                            data-src="images/services-slider-card-2-sm.jpg"
+                            data-srcset="images/services-slider-card-2-sm@2x.jpg 2x"
+                            alt="A good design is one that is made easy."
+                            width="568" height="757">
+                        </picture>
+                      </div>
+                      <div class="services-card__content">
+                        <div class="services-card__counter">#02</div>
+                        <h3 class="services-card__title">
+                          <a href="codex2.html" class="services-card__link">A good design is one that is made easy.</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--7 services-section__list-col services-section__list-col--size-md">
+                  <article class="services-card services-card--size-md">
+                    <div class="services-card__inner">
+                      <div class="services-card__media">
+                        <picture class="services-card__picture">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-3-xs@2x.webp 2x,
+                                    images/services-slider-card-3-xs.webp"
+                                    type="image/webp">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-3-xs@2x.jpg 2x,
+                                    images/services-slider-card-3-xs.jpg"
+                                    type="image/jpeg">
+                          <source
+                            data-srcset="images/services-slider-card-3-sm@2x.webp 2x,
+                                    images/services-slider-card-3-sm.webp"
+                                    type="image/webp">
+                          <img
+                            class="js-lazyload"
+                            data-src="images/services-slider-card-3-sm.jpg"
+                            data-srcset="images/services-slider-card-3-sm@2x.jpg 2x"
+                            alt="Every design task has only one possible solution: the right one."
+                            width="568" height="757">
+                        </picture>
+                      </div>
+                      <div class="services-card__content">
+                        <div class="services-card__counter">#03</div>
+                        <h3 class="services-card__title">
+                          <a href="codex2.html" class="services-card__link">Every design task has only one possible solution: the right one.</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--7 services-section__list-col services-section__list-col--size-md">
+                  <article class="services-card services-card--size-md">
+                    <div class="services-card__inner">
+                      <div class="services-card__media">
+                        <picture class="services-card__picture">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-4-xs@2x.webp 2x,
+                                    images/services-slider-card-4-xs.webp"
+                                    type="image/webp">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-4-xs@2x.jpg 2x,
+                                    images/services-slider-card-4-xs.jpg"
+                                    type="image/jpeg">
+                          <source
+                            data-srcset="images/services-slider-card-4-sm@2x.webp 2x,
+                                    images/services-slider-card-4-sm.webp"
+                                    type="image/webp">
+                          <img
+                            class="js-lazyload"
+                            data-src="images/services-slider-card-4-sm.jpg"
+                            data-srcset="images/services-slider-card-4-sm@2x.jpg 2x"
+                            alt="A good design is one that is made easy."
+                            width="568" height="757">
+                        </picture>
+                      </div>
+                      <div class="services-card__content">
+                        <div class="services-card__counter">#04</div>
+                        <h3 class="services-card__title">
+                          <a href="codex2.html" class="services-card__link">A good design is one that is made easy.</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row__col--7 services-section__list-col services-section__list-col--size-md">
+                  <article class="services-card services-card--size-md">
+                    <div class="services-card__inner">
+                      <div class="services-card__media">
+                        <picture class="services-card__picture">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-5-xs@2x.webp 2x,
+                                    images/services-slider-card-5-xs.webp"
+                                    type="image/webp">
+                          <source
+                            media="(max-width: 576px)"
+                            data-srcset="images/services-slider-card-5-xs@2x.jpg 2x,
+                                    images/services-slider-card-5-xs.jpg"
+                                    type="image/jpeg">
+                          <source
+                            data-srcset="images/services-slider-card-5-sm@2x.webp 2x,
+                                    images/services-slider-card-5-sm.webp"
+                                    type="image/webp">
+                          <img
+                            class="js-lazyload"
+                            data-src="images/services-slider-card-5-sm.jpg"
+                            data-srcset="images/services-slider-card-5-sm@2x.jpg 2x"
+                            alt="Every design task has only one possible solution: the right one."
+                            width="568" height="757">
+                        </picture>
+                      </div>
+                      <div class="services-card__content">
+                        <div class="services-card__counter">#05</div>
+                        <h3 class="services-card__title">
+                          <a href="codex2.html" class="services-card__link">Every design task has only one possible solution: the right one.</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- services-section END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

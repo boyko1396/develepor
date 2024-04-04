@@ -1,0 +1,128 @@
+$siteResolutionExlg: .05787037037vw;
+$siteResolution: 1px;
+$frauncesFont: 'Fraunces';
+$polysansFont: 'PolySans Neutral';
+$ttnormsproFont: 'TT Norms Pro';
+$interFont: 'Inter';
+$mainWeight: 400;
+$lineHeight1: 1.1;
+$lineHeight2: 1.25;
+$lineHeight3: 1.3;
+$lineHeight4: 1.45;
+$lineHeight5: 1.6;
+$lineHeightDefault: $lineHeight2;
+
+$containerWidthMd: 1154rem;
+$containerWidthLg: 1324rem;
+
+$gap: 17rem;
+$gapFluid: 34rem;
+
+$scrollbarWidth: 17rem;
+
+$verticalRhythm1Desktop: 152rem;
+$verticalRhythm2Desktop: 48rem;
+$verticalRhythm3Desktop: 24rem;
+$verticalRhythm4Desktop: 12rem;
+$verticalRhythm5Desktop: 112rem;
+$verticalRhythm6Desktop: 72rem;
+$verticalRhythm7Desktop: 6rem;
+$verticalRhythm8Desktop: 40rem;
+$verticalRhythm9Desktop: 20rem;
+$verticalRhythm10Desktop: 72rem;
+$verticalRhythm11Desktop: 30rem;
+$verticalRhythm1Mobile: 96rem;
+$verticalRhythm2Mobile: 48rem;
+$verticalRhythm3Mobile: 24rem;
+$verticalRhythm4Mobile: 56rem;
+
+$whiteColor: #ffffff;
+$blackColor: #142928;
+$darkSlateColor: #304443;
+$slateGrayColor: #6C7474;
+$lightSlateColor: #93A1A1;
+$paleBlueColor: #EFF5F6;
+$sandyBrownColor: #DCB7A2;
+$roseColor: #FCF4EF;
+$edenColor: #17585E;
+
+$fontFamily: $interFont, $polysansFont, sans-serif, Arial;
+$fontPolysans: $polysansFont, $interFont, sans-serif, Arial;
+$fontTtnormspro: $ttnormsproFont, $polysansFont, sans-serif, Arial;
+$fontFraunces: $frauncesFont, $polysansFont, sans-serif, Arial;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$gradientSkeleton1: linear-gradient(0deg, $roseColor 48%, $paleBlueColor 54%, $roseColor 60%);
+$gradientSkeleton2: linear-gradient(0deg, $paleBlueColor 48%, $roseColor 54%, $paleBlueColor 60%);
+
+$transition: all 500ms ease-out;
+$transitionSemi: all .65s ease-out;
+$transitionMd: all 1.2s ease-out;
+$transitionLg: all 2.2s ease-out;
+
+$exlg: 1728px;
+$exlg-mf: $exlg + 1;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 18rem;
+  --fs-1: 81rem;
+  --fs-2: 42rem;
+  --fs-3: 38rem;
+  --fs-4: 28rem;
+  --fs-5: 12rem;
+  --fs-6: 12rem;
+  --fs-7: 16rem;
+  --fs-8: 36rem;
+  --fs-9: 24rem;
+  --fs-10: 17rem;
+  --fs-11: 27rem;
+  --gap: 17rem;
+  --gap-: -17rem;
+  --gap-fluid: 34rem;
+  --gap-fluid-: -34rem;
+  @media (max-width: $lg) {
+    --fs-default: 16rem;
+    --fs-2: 28rem;
+    --fs-3: 24rem;
+    --fs-4: 24rem;
+    --fs-5: 10rem;
+    --fs-6: 10rem;
+    --fs-7: 12rem;
+    --fs-8: 32rem;
+    --fs-9: 22rem;
+    --fs-10: 16rem;
+    --fs-11: 22rem;
+    --gap: 20rem;
+    --gap-: -20rem;
+    --gap-fluid: 40rem;
+    --gap-fluid-: -40rem;
+  }
+  @media (max-width: $md) {
+    --fs-1: 68rem;
+    --fs-9: 20rem;
+  }
+  @media (max-width: $sm) {
+    --fs-1: 38rem;
+    --fs-5: 16rem;
+    --fs-6: 16rem;
+    --fs-8: 28rem;
+    --fs-9: 16rem;
+    --fs-11: 16rem;
+  }
+}

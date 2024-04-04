@@ -1,0 +1,101 @@
+.about-section {
+  @media (max-width: $lg) {
+    padding-top: 96rem;
+  }
+  &__container {
+    margin-bottom: -$verticalRhythm2Desktop;
+    @media (max-width: $sm) {
+      margin-bottom: 0;
+    }
+  }
+  &__row {
+    justify-content: space-between;
+  }
+  &__col {
+    &--content {
+      margin-right: auto;
+      margin-left: auto;
+      position: sticky;
+      top: 0;
+      align-self: flex-end;
+      @media (max-width: $lg) {
+        align-self: flex-start;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+        position: static;
+      }
+    }
+    &--picture {
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--description {
+      margin-left: auto;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__content {
+    height: 100%;
+    margin: 0 var(--gap-) 0 0;
+    padding: $verticalRhythm2Desktop 0 $verticalRhythm2Desktop;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (max-width: $lg) {
+      height: auto;
+      padding: 47rem 0 $verticalRhythm1Mobile;
+    }
+  }
+  &__title {
+    margin: 0 0 $verticalRhythm6Desktop;
+    letter-spacing: 0;
+    @media (max-width: $lg) {
+      margin-bottom: $verticalRhythm4Mobile;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: $verticalRhythm8Desktop;
+    }
+  }
+  &__subtitle {
+    margin: 0;
+    @media (max-width: $sm) {
+      font-size: 24rem;
+    }
+  }
+  &__picture {
+    @extend %img-cover;
+    height: 100vh;
+    margin: 0 calc((100vw - 1256rem) / -2) 0 0;
+    z-index: 2;
+    @media (max-width: $lg) {
+      margin-right: var(--gap-fluid-);
+    }
+    @media (max-width: $sm) {
+      width: 100vw;
+      margin: 0 0 0 var(--gap-fluid-);
+      padding-bottom: 153.666666667%;
+    }
+    img {
+      object-position: center top;
+    }
+  }
+  &__description {
+    margin: $verticalRhythm1Desktop 0 $verticalRhythm2Desktop;
+    font-size: var(--fs-11);
+    line-height: $lineHeight4;
+    @media (max-width: $lg) {
+      margin-top: $verticalRhythm5Desktop;
+    }
+    @media (max-width: $sm) {
+      margin-top: $verticalRhythm1Mobile;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.benefits-section {
+  padding-bottom: $verticalRhythm1Desktop;
+  @media (max-width: $lg) {
+    padding-bottom: $verticalRhythm5Desktop;
+  }
+  @media (max-width: $sm) {
+    padding-bottom: $verticalRhythm1Mobile;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 $verticalRhythm1Desktop;
+    text-indent: 122rem;
+    @media (max-width: $lg) {
+      margin-bottom: $verticalRhythm5Desktop;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: $verticalRhythm1Mobile;
+      text-indent: 60rem;
+    }
+  }
+  &__row {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__col {
+    &--description {
+      margin-left: auto;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--subtitle {
+      margin-right: auto;
+      margin-left: auto;
+      position: sticky;
+      top: var(--gap-fluid);
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+        position: static;
+      }
+    }
+    &--contacts {
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__description {
+    margin: 0 0 $verticalRhythm1Desktop;
+    font-size: var(--fs-11);
+    line-height: $lineHeight4;
+    @media (max-width: $lg) {
+      margin-bottom: $verticalRhythm5Desktop;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: $verticalRhythm1Mobile;
+    }
+  }
+  &__subtitle {
+    @media (max-width: $lg) {
+      margin-bottom: $verticalRhythm2Desktop;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: $verticalRhythm8Desktop;
+      font-size: var(--fs-4);
+    }
+  }
+  &__contacts {
+    margin: 12rem 0 #{-$verticalRhythm10Desktop};
+    @media (max-width: $lg) {
+      margin-top: 0;
+      margin-bottom: -$verticalRhythm8Desktop;
+    }
+    &-card {
+      margin-bottom: $verticalRhythm10Desktop;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: $lg) {
+        margin-bottom: $verticalRhythm8Desktop;
+        flex-wrap: wrap;
+      }
+      &-title {
+        max-width: 174rem;
+        padding-right: 10rem;
+        letter-spacing: 0;
+        flex: 0 0 174rem;
+        @media (max-width: $lg) {
+          max-width: 100%;
+          margin: 0 0 8rem;
+          padding-right: 0;
+          flex-basis: 100%;
+          letter-spacing: 0;
+        }
+      }
+      &-text {
+        font-weight: 300;
+        font-size: var(--fs-11);
+        font-family: $fontFraunces;
+        letter-spacing: .025em;
+        flex-grow: 1;
+        @media (max-width: $lg) {
+          max-width: 100%;
+          flex-basis: 100%;
+          letter-spacing: .01em;
+        }
+        a {
+          transition: $transition;
+          &:hover {
+            color: $slateGrayColor;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

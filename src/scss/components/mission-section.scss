@@ -1,0 +1,136 @@
+.mission-section {
+  padding: $verticalRhythm1Desktop 0;
+  @media (max-width: $lg) {
+    padding: $verticalRhythm5Desktop 0;
+  }
+  @media (max-width: $sm) {
+    padding: $verticalRhythm1Mobile 0;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 $verticalRhythm1Desktop;
+    text-indent: 122rem;
+    @media (max-width: $lg) {
+      margin-bottom: $verticalRhythm5Desktop;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: $verticalRhythm1Mobile;
+      text-indent: 60rem;
+    }
+  }
+  &__row {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__col {
+    &--subtitle {
+      margin-right: auto;
+      margin-left: auto;
+      position: sticky;
+      top: var(--gap-fluid);
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+        position: static;
+      }
+    }
+    &--content {
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__subtitle {
+    margin: 0;
+    @media (max-width: $lg) {
+      margin-bottom: $verticalRhythm2Desktop;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: $verticalRhythm8Desktop;
+    }
+  }
+  &__list {
+    margin: 16rem 0 #{-$verticalRhythm2Desktop};
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $md) {
+      margin-top: 0;
+    }
+    @media (max-width: $xs) {
+      margin-bottom: -40rem;
+    }
+  }
+  &__card {
+    max-width: 43%;
+    margin: 0 0 $verticalRhythm2Desktop;
+    flex: 0 0 43%;
+    @media (max-width: $xs) {
+      max-width: 100%;
+      margin-bottom: 40rem;
+      flex-basis: 100%;
+    }
+    &-title {
+      margin: 0 0 $verticalRhythm8Desktop;
+      letter-spacing: 0;
+      white-space: nowrap;
+      @media (max-width: $lg) {
+        margin-bottom: 16rem;
+        font-size: var(--fs-9);
+      }
+      @media (max-width: $sm) {
+        margin-bottom: 12rem;
+        font-size: 18rem;
+      }
+    }
+    &-content {
+      font-weight: 300;
+      font-family: $fontFraunces;
+      line-height: $lineHeight5;
+      letter-spacing: .045em;
+      @media (max-width: $sm) {
+        line-height: $lineHeight3;
+      }
+    }
+    &-text-list {
+      max-width: 210rem;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      @media (max-width: $lg) {
+        max-width: 100%;
+      }
+      li {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 12rem;
+          @media (max-width: $sm) {
+            margin-bottom: 7rem;
+          }
+          @media (max-width: $sm) {
+            margin-bottom: 1rem;
+          }
+        }
+        &:before {
+          background: currentColor;
+          width: 4px;
+          height: 4px;
+          margin-right: 13rem;
+          content: '';
+          border-radius: 50%;
+          position: absolute;
+          right: 100%;
+          top: .6em;
+          @media (max-width: $sm) {
+            margin-right: 12rem;
+            top: .7em;
+          }
+        }
+      }
+    }
+  }
+}

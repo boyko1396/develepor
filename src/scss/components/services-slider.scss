@@ -1,0 +1,153 @@
+.services-slider {
+  max-width: 1400rem;
+  margin: 0 auto;
+  position: relative;
+  .swiper-button {
+    margin-top: -86rem;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    @media (max-width: $lg) {
+      display: none !important;
+    }
+    &-prev {
+      margin-left: calc(var(--swiperBtnSize) / -2 - var(--gap));
+      left: 0;
+    }
+    &-next {
+      margin-right: calc(var(--swiperBtnSize) / -2 - var(--gap));
+      right: 0;
+    }
+  }
+  .swiper-wrapper {
+    align-items: initial;
+  }
+  .swiper-slide {
+    margin: 0 $gap;
+    @media (max-width: $sm) {
+      margin: 0 12rem;
+    }
+  }
+  &__slide {
+  }
+  &__card {
+    --services-card-bg-color: #17585E;
+    --services-card-text-color: #FEE8DB;
+    background: var(--services-card-bg-color);
+    height: 100%;
+    display: flex;
+    color: var(--services-card-text-color);
+    &:hover {
+      .services-slider__card-content {
+        @media (min-width: $lg-mf) {
+          opacity: .7;
+        }
+      }
+    }
+    @media (max-width: $sm) {
+      background: transparent;
+      flex-wrap: wrap;
+      color: $blackColor;
+    }
+    &-media {
+      max-width: 65.35715%;
+      flex: 0 0 65.35715%;
+      @media (max-width: $md) {
+        max-width: 60%;
+        flex-basis: 60%;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin: 0 0 $verticalRhythm3Desktop;
+        flex-basis: 100%;
+      }
+    }
+    &-picture {
+      @extend %img-cover;
+      height: 100%;
+      padding-bottom: 69.9453551913%;
+      @media (max-width: $sm) {
+        height: initial;
+        padding: 0 0 133.284883721%;
+      }
+    }
+    &-content {
+      padding: 55rem 60rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      transition: $transition;
+      transition-property: opacity;
+      @media (max-width: $lg) {
+        padding: var(--gap-fluid);
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+      }
+    }
+    &-suptitle {
+      margin: 0 0 17rem;
+      font-weight: 600;
+      font-size: var(--fs-7);
+      font-family: $fontTtnormspro;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      @media (max-width: $sm) {
+        display: none;
+      }
+    }
+    &-title {
+      @extend .title-size-2;
+      margin: 0 0 20rem;
+      @media (max-width: $sm) {
+        margin-bottom: 0;
+      }
+    }
+    &-footer {
+      @extend .title-size-5;
+      margin-top: auto;
+      padding: 60rem 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: uppercase;
+      @media (max-width: $sm) {
+        margin: 0 0 $verticalRhythm4Desktop;
+        padding: 0;
+        color: $slateGrayColor;
+        order: -1;
+      }
+      &:after {
+        @media (min-width: $sm-mf) {
+          background: currentColor;
+          height: 2px;
+          margin: 0 31rem;
+          content: '';
+          flex-grow: 1;
+          order: -1;
+        }
+      }
+      &-counter {
+        flex-shrink: 0;
+        order: -2;
+        &:before {
+          content: '\0023';
+        }
+      }
+      &-moore-link {
+        @extend %link-cover;
+        flex-shrink: 0;
+        @media (max-width: $sm) {
+          display: none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
