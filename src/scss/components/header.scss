@@ -99,7 +99,8 @@ $headerDropdownZindex2: 1002;
       overflow: hidden;
       transition: $transition;
       transition-duration: .7s;
-      transition-property: transform, opacity, visibility;
+      transition-property: transform, opacity, visibility, height;
+      transition-delay: 0s, 0s, 0s, .1s;
       z-index: $headerDropdownZindex1;
     }
     &-list {
@@ -337,6 +338,7 @@ body {
     }
     .header__menu {
       @media (max-width: $lg) {
+        height: 0;
         transform: translateY(-100vh);
         pointer-events: none;
         opacity: 0;
